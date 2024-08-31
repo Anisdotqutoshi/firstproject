@@ -1,11 +1,11 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "your API"
 messages = []
 system_msg = input("What type of chatbot would you like to create?\n")
 messages.append({"role": "system", "content": system_msg})
 
-print("Your new assistant is ready!")
+print("Your new assistant is ready! How can i help you.")
 while input != "quit()":
     message = input()
     messages.append({"role": "user", "content": message})
